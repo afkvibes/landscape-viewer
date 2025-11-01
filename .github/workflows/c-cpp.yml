@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: upd
-      run: apt-get update
+      run: sudo apt-get update
     - name: upd
-      run: apt-get install -y libcglm-dev libsdl2-dev libgl-dev libglew-dev
+      run: sudo apt-get install -y libcglm-dev libsdl2-dev libgl-dev libglew-dev
     - name: make
       run: make
 
